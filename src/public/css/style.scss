@@ -9,6 +9,7 @@
 
 @import "partials/colors";
 @import 'partials/sidebar';
+@import 'partials/home';
 
 body {
   font-family: "Sora", sans-serif;
@@ -26,3 +27,6 @@ main {
   border: 1px solid red;
 }
 
+a{
+  text-decoration: none;
+}

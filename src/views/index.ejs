@@ -11,53 +11,69 @@
         <%- include('components/sidebar') %>
 
             <main>
-                
-                <h1>Conteudo do site aqui</h1>
+                <section class="home-display">
+                    <nav class="busca-home">
 
-                <table class="table table-dark table-striped">
-                    <thead class="table table-dark table-striped">
-                        <tr>
-                            <th scope="col">ID</th>
-                            <th>Imagem</th>
-                            <th>Nome</th>
-                            <th>Preço</th>
-                            <th>Ativo</th>
-                            <th>Estoque</th>
-                            <th>Ações</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <!-- Linha 1 -->
-                        <tr>
-                            <td scope="row">1</td>
-                            <td><img src="caminho_para_imagem1.jpg" alt="Imagem 1" width="50"></td>
-                            <td>Produto 1</td>
-                            <td>R$ 100,00</td>
-                            <td>Sim</td>
-                            <td>50</td>
-                            <td>
-                                <!-- Aqui você pode adicionar links para ações específicas, por exemplo: -->
-                                <a href="#">Editar</a> |
-                                <a href="#">Excluir</a>
-                            </td>
-                        </tr>
-                        <!-- Linha 2 -->
-                        <tr>
-                            <td>2</td>
-                            <td><img src="caminho_para_imagem2.jpg" alt="Imagem 2" width="50"></td>
-                            <td>Produto 2</td>
-                            <td>R$ 75,00</td>
-                            <td>Sim</td>
-                            <td>30</td>
-                            <td>
-                                <!-- Aqui você pode adicionar links para ações específicas, por exemplo: -->
-                                <a href="#">Editar</a> |
-                                <a href="#">Excluir</a>
-                            </td>
-                        </tr>
-                        <!-- Adicione mais linhas aqui conforme necessário -->
-                    </tbody>
-                </table>
+                        <div class=""><i class="material-symbols-outlined">search</i><input type="text"></div>
+    
+                    </nav>
+    
+                    <div class="box-tables">
+    
+                        <table class="table table-dark table-striped">
+                            <thead class="table table-dark table-striped">
+                                <tr>
+                                    <th scope="col">ID</th>
+                                    <th>Imagem</th>
+                                    <th>Nome</th>
+                                    <th>Preço</th>
+                                    <th>Ativo</th>
+                                    <th>Estoque</th>
+                                    <th>Ações</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <!-- Linha 1 -->
+                                <tr>
+                                    <td scope="row">1</td>
+                                    <td><img src="caminho_para_imagem1.jpg" alt="Imagem 1" width="50"></td>
+                                    <td>Produto 1</td>
+                                    <td>R$ 100,00</td>
+                                    <td>Sim</td>
+                                    <td>50</td>
+                                    <td>
+                                        <!-- Aqui você pode adicionar links para ações específicas, por exemplo: -->
+                                        
+                                    <nav class="buttons-home">
+                                        <button class="button-editar">
+                                            <a href="#">Editar</a>
+                                        </button>
+                                        <button class="button-abrir">
+                                            <a href="#">Abrir</a>
+                                        </button> 
+                                        <button class="button-excluir">
+                                            <a href="#">Excluir</a>
+                                        </button>
+                                       
+                                    </nav>    
+                                       
+                                    </td>
+                                </tr>
+                                <!-- Linha 2 -->
+                               
+                                <!-- Adicione mais linhas aqui conforme necessário -->
+                            </tbody>
+                        </table>
+    
+                    </div>
+    
+
+                </section>
+
+
+             
+
+
 
             </main>
 
