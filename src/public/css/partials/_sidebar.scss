@@ -1,0 +1,152 @@
+/* Sidebar */
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 240px;
+    height: 100%;
+    padding: 40px 10px 30px 10px;
+    border-right: 1.1px solid $primaria-ligth;
+    transition: all 0.35s;
+  
+    button {
+      height: 60px;
+      background-color: transparent;
+      border: 0;
+      font-family: inherit;
+      color: $branco-normal;
+      cursor: pointer;
+      text-align: left;
+      padding: 0;
+  
+      i {
+        position: relative;
+        font-size: 30px;
+        transition: 0.2s;
+      }
+  
+      span {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        height: 48px;
+        padding: 0 16px 0 12px;
+        border-radius: 24px;
+        line-height: 1;
+        transition: all 0.2s;
+        font-size: 18px;
+      }
+    }
+  }
+  
+  .sidebar > nav {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .sidebar button:hover > span {
+    background-color: rgba(255, 255, 255, 0.08);
+  }
+  
+  .sidebar-header {
+    width: 100%;
+    margin-bottom: 16px;
+  }
+  
+  .logo-img {
+    width: 40px;
+    min-height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.4s;
+    margin-left: 10px;
+  }
+  .logo-img:hover {
+    transform: scale(1.5);
+  }
+  
+  @media screen and (max-width: 920px) {
+    .sidebar {
+      width: 72px;
+    }
+  
+    .sidebar button > span {
+      width: 50px;
+    }
+  
+    .sidebar button > span > span {
+      visibility: hidden;
+      opacity: 0;
+    }
+  
+    main {
+      margin-left: 78px;
+      transition: margin 0.4s;
+    }
+  }
+  
+  /* Mobile */
+  
+  .button-mobile {
+    display: none;
+    align-items: flex-start;
+    align-items: center;
+    margin: 16px;
+    background: transparent;
+    color: $branco-normal;
+    border: 0;
+  }
+  
+  .menu-mobile {
+    display: none;
+  }
+  
+  .menu-mobile-active {
+    width: 100vw;
+    height: 100vh;
+    background-color: $primaria-dark;
+    z-index: 99;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  
+    button {
+      background-color: transparent;
+      border: 0;
+      color: inherit;
+      margin-bottom: 16px;
+  
+      span {
+        display: inline-flex;
+        align-items: center;
+      }
+    }
+  }
+  
+  .mobile-text {
+    font-size: 22px;
+    margin-left: 8px;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .sidebar {
+      display: none;
+    }
+  
+    .button-mobile {
+      display: flex;
+    }
+  
+    main {
+      margin-left: 10px;
+    }
+  }
+  
