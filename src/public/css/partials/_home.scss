@@ -25,37 +25,38 @@
 }
 
 .buttons-home button:hover {
-    transform: scale(1.1);
-    border: none;
-    box-shadow: -1px 1px 1px 1px rgba(255, 255, 255, 0.2);
-
+  transform: scale(1.1);
+  border: none;
+  box-shadow: -1px 1px 1px 1px rgba(255, 255, 255, 0.2);
 }
-
 
 .button-editar {
   background-color: $verde-normal;
 
-     a {
+  a {
     color: $primaria-dark;
     font-weight: 600;
-     }
+  }
 }
 
 .button-abrir {
-    background-color: $branco-dark;
-    a{
-        color: $primaria-dark;
-        font-weight: 600;
-
-    }
-
+  background-color: $branco-dark;
+  a {
+    color: $primaria-dark;
+    font-weight: 600;
+  }
 }
 
 .button-excluir {
   background-color: $vermelho-normal;
-  a{
+  a {
     color: $branco-dark;
-        font-weight: 600;
+    font-weight: 600;
+  }
+}
 
+@media screen and (max-width: 920px) {
+  .buttons-home {
+    flex-direction: column;
   }
 }

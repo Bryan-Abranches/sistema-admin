@@ -8,8 +8,9 @@
 /* Importações */
 
 @import "partials/colors";
-@import 'partials/sidebar';
-@import 'partials/home';
+@import "partials/sidebar";
+@import "partials/home";
+@import 'partials/login';
 
 body {
   font-family: "Sora", sans-serif;
@@ -23,10 +24,22 @@ main {
   overflow: hidden;
 }
 
+@media screen and (max-width: 919px) {
+  main {
+    margin-left: 79px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    margin-left: 10px;
+  }
+}
+
 .border {
   border: 1px solid red;
 }
 
-a{
+a {
   text-decoration: none;
 }

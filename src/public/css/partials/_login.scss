@@ -1,0 +1,131 @@
+.login-display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-display::before{
+    content: "";
+    display: block;
+    position: absolute;
+    background-image: 
+    linear-gradient(to bottom, rgba(6, 18, 30, 0.1), #061213),
+      url("/assets/bg01.jpg");
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    opacity: 0.9;
+
+}
+
+.login-container {
+  width: 480px;
+  height: 580px;
+  padding: 20px;
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+  border-radius: 8px;
+  background-color: $primaria-ligth;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+
+  nav {
+    margin-top: 13px;
+
+    p {
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: $branco-normal;
+      }
+    }
+  }
+}
+
+.login-container h2 {
+  text-align: left;
+  color: $branco-normal;
+  max-width: 100px;
+  font-size: 35px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 16px;
+    color: #fff;
+    background-color: $vermelho-dark;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 600ms;
+  }
+
+  input {
+    width: 100%;
+    padding: 8px;
+    letter-spacing: 1px;
+    font-size: 16px;
+    border-radius: 4px;
+    background-color: transparent;
+    border: none;
+    color: #fff;
+  }
+}
+
+.input-login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-bottom: 1px solid #fff;
+  opacity: 1;
+}
+
+.form-group button:hover {
+  background-color: $vermelho-normal;
+  animation: translateY 0.8s infinite alternate;
+}
+
+.form-group button:active {
+  transform: scale(0.9);
+}
+
+@media screen and (max-width: 480px) {
+  .login-container {
+    font-size: 16px;
+    margin: 10px;
+  }
+}
+
+@keyframes translateY {
+  from {
+    transform: translateY(0) scale(1);
+  }
+
+  to {
+    transform: translateY(-1px) scale(1.01);
+  }
+}
